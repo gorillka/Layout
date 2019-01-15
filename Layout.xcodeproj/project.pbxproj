@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		2395F13F21EDD3610038084E /* Layout.h in Headers */ = {isa = PBXBuildFile; fileRef = 2395F13D21EDD3610038084E /* Layout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2395F14721EDD4820038084E /* LayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2395F14621EDD4820038084E /* LayoutAnchor.swift */; };
+		2395F14A21EDD51D0038084E /* NSLayoutAnchor+LayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2395F14921EDD51D0038084E /* NSLayoutAnchor+LayoutAnchor.swift */; };
+		2395F14C21EDD5AE0038084E /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2395F14B21EDD5AE0038084E /* LayoutProxy.swift */; };
+		2395F14E21EDD6550038084E /* LayoutProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2395F14D21EDD6550038084E /* LayoutProperty.swift */; };
+		2395F15021EDDB530038084E /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2395F14F21EDDB530038084E /* UIView+Layout.swift */; };
+		2395F15221EDDF9A0038084E /* LayoutAnchor+Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2395F15121EDDF9A0038084E /* LayoutAnchor+Comparable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2395F13A21EDD3610038084E /* Layout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Layout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2395F13D21EDD3610038084E /* Layout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Layout.h; sourceTree = "<group>"; };
 		2395F13E21EDD3610038084E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2395F14621EDD4820038084E /* LayoutAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutAnchor.swift; sourceTree = "<group>"; };
+		2395F14921EDD51D0038084E /* NSLayoutAnchor+LayoutAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutAnchor+LayoutAnchor.swift"; sourceTree = "<group>"; };
+		2395F14B21EDD5AE0038084E /* LayoutProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutProxy.swift; sourceTree = "<group>"; };
+		2395F14D21EDD6550038084E /* LayoutProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutProperty.swift; sourceTree = "<group>"; };
+		2395F14F21EDDB530038084E /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		2395F15121EDDF9A0038084E /* LayoutAnchor+Comparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LayoutAnchor+Comparable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +58,32 @@
 		2395F13C21EDD3610038084E /* Layout */ = {
 			isa = PBXGroup;
 			children = (
+				2395F14521EDD4560038084E /* Classes */,
 				2395F13D21EDD3610038084E /* Layout.h */,
 				2395F13E21EDD3610038084E /* Info.plist */,
 			);
 			path = Layout;
+			sourceTree = "<group>";
+		};
+		2395F14521EDD4560038084E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2395F14621EDD4820038084E /* LayoutAnchor.swift */,
+				2395F14B21EDD5AE0038084E /* LayoutProxy.swift */,
+				2395F14D21EDD6550038084E /* LayoutProperty.swift */,
+				2395F14821EDD4F10038084E /* Extensions */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2395F14821EDD4F10038084E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2395F14921EDD51D0038084E /* NSLayoutAnchor+LayoutAnchor.swift */,
+				2395F14F21EDDB530038084E /* UIView+Layout.swift */,
+				2395F15121EDDF9A0038084E /* LayoutAnchor+Comparable.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +129,7 @@
 				TargetAttributes = {
 					2395F13921EDD3610038084E = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2395F14A21EDD51D0038084E /* NSLayoutAnchor+LayoutAnchor.swift in Sources */,
+				2395F14721EDD4820038084E /* LayoutAnchor.swift in Sources */,
+				2395F14E21EDD6550038084E /* LayoutProperty.swift in Sources */,
+				2395F14C21EDD5AE0038084E /* LayoutProxy.swift in Sources */,
+				2395F15221EDDF9A0038084E /* LayoutAnchor+Comparable.swift in Sources */,
+				2395F15021EDDB530038084E /* UIView+Layout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +302,7 @@
 		2395F14321EDD3610038084E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +320,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gorilka-team.Layout";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +329,7 @@
 		2395F14421EDD3610038084E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
