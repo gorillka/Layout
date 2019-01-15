@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct LayoutProxy {
+public class LayoutProxy {
 
     public lazy var leading = property(with: view.leadingAnchor)
     public lazy var trailing = property(with: view.trailingAnchor)
