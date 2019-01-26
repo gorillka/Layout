@@ -9,7 +9,7 @@ Layout is provided as standalone Swift framework that you can use in your applic
 
 To install Layout using Carthage, add this to your Cartfile:
 ```
-github "https://github.com/gorillka/Layout" ~> 1.0.1
+github "https://github.com/gorillka/Layout" ~> 1.1.0
 ```
 
 ## Integration
