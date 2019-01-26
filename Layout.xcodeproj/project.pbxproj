@@ -14,6 +14,9 @@
 		2395F14E21EDD6550038084E /* LayoutProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2395F14D21EDD6550038084E /* LayoutProperty.swift */; };
 		2395F15021EDDB530038084E /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2395F14F21EDDB530038084E /* UIView+Layout.swift */; };
 		2395F15221EDDF9A0038084E /* LayoutAnchor+Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2395F15121EDDF9A0038084E /* LayoutAnchor+Comparable.swift */; };
+		AC4821A921FC6C7A008FE8FD /* UniformKeyPathInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4821A821FC6C7A008FE8FD /* UniformKeyPathInitializable.swift */; };
+		AC4821AB21FC6CAC008FE8FD /* UniformKeyPathInitializable+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4821AA21FC6CAC008FE8FD /* UniformKeyPathInitializable+Init.swift */; };
+		AC4821AD21FC6D79008FE8FD /* CGSize+UniformKeyPathInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4821AC21FC6D79008FE8FD /* CGSize+UniformKeyPathInitializable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		2395F14D21EDD6550038084E /* LayoutProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutProperty.swift; sourceTree = "<group>"; };
 		2395F14F21EDDB530038084E /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		2395F15121EDDF9A0038084E /* LayoutAnchor+Comparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LayoutAnchor+Comparable.swift"; sourceTree = "<group>"; };
+		AC4821A821FC6C7A008FE8FD /* UniformKeyPathInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniformKeyPathInitializable.swift; sourceTree = "<group>"; };
+		AC4821AA21FC6CAC008FE8FD /* UniformKeyPathInitializable+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UniformKeyPathInitializable+Init.swift"; sourceTree = "<group>"; };
+		AC4821AC21FC6D79008FE8FD /* CGSize+UniformKeyPathInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+UniformKeyPathInitializable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 				2395F14621EDD4820038084E /* LayoutAnchor.swift */,
 				2395F14B21EDD5AE0038084E /* LayoutProxy.swift */,
 				2395F14D21EDD6550038084E /* LayoutProperty.swift */,
+				AC4821A721FC6C5F008FE8FD /* Protocols */,
 				2395F14821EDD4F10038084E /* Extensions */,
 			);
 			path = Classes;
@@ -82,8 +89,18 @@
 				2395F14921EDD51D0038084E /* NSLayoutAnchor+LayoutAnchor.swift */,
 				2395F14F21EDDB530038084E /* UIView+Layout.swift */,
 				2395F15121EDDF9A0038084E /* LayoutAnchor+Comparable.swift */,
+				AC4821AA21FC6CAC008FE8FD /* UniformKeyPathInitializable+Init.swift */,
+				AC4821AC21FC6D79008FE8FD /* CGSize+UniformKeyPathInitializable.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AC4821A721FC6C5F008FE8FD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AC4821A821FC6C7A008FE8FD /* UniformKeyPathInitializable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,8 +186,11 @@
 				2395F14721EDD4820038084E /* LayoutAnchor.swift in Sources */,
 				2395F14E21EDD6550038084E /* LayoutProperty.swift in Sources */,
 				2395F14C21EDD5AE0038084E /* LayoutProxy.swift in Sources */,
+				AC4821AD21FC6D79008FE8FD /* CGSize+UniformKeyPathInitializable.swift in Sources */,
 				2395F15221EDDF9A0038084E /* LayoutAnchor+Comparable.swift in Sources */,
 				2395F15021EDDB530038084E /* UIView+Layout.swift in Sources */,
+				AC4821A921FC6C7A008FE8FD /* UniformKeyPathInitializable.swift in Sources */,
+				AC4821AB21FC6CAC008FE8FD /* UniformKeyPathInitializable+Init.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
