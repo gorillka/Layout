@@ -1,0 +1,9 @@
+# Changelog
+
+### Version 1.0.1
+
+* Initial release
+
+### Version 1.1.0
+
+* Add size method
