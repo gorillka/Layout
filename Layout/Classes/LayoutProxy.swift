@@ -27,6 +27,15 @@ public class LayoutProxy {
         self.view = view
     }
 
+    @discardableResult
+    public func size(_ size: CGSize) -> (width: NSLayoutConstraint, height: NSLayoutConstraint) {
+
+        let width = self.width == size.width
+        let height = self.height == size.height
+
+        return (width, height)
+    }
+
     private func property<A: LayoutAnchor>(with anchor: A) -> LayoutProperty<A> {
         return LayoutProperty(anchor: anchor)
     }
